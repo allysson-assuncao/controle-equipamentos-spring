@@ -41,6 +41,7 @@ function renderEquipments(list) {
                 <div class="flex gap-1">
                     <select id="time-${equip.id}" class="text-sm border rounded p-1">
                         <option value="1">1 min</option>
+                        <option value="30">30 min</option>
                         <option value="60">1 h</option>
                     </select>
                     <button onclick="handleReserve(${equip.id})" class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
@@ -81,7 +82,6 @@ function renderStats(list) {
 }
 
 // --- Ações ---
-
 window.addEquipment = async () => {
     const input = document.getElementById('newEquipName');
     if(!input.value) return;
