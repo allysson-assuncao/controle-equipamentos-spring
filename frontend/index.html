@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Spring System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+<div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Acesso ao Sistema</h1>
+
+    <form id="loginForm" class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Usuário</label>
+            <input type="text" id="nome"
+                   class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                   placeholder="Seu nome" required>
+        </div>
+
+        <div>
+            <label class="block text-sm font-medium text-gray-700">Senha</label>
+            <input type="password" id="senha" class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+                   placeholder="Senha" required>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition">
+            Entrar / Cadastrar
+        </button>
+    </form>
+    <p id="errorMsg" class="text-red-500 text-sm mt-4 text-center hidden"></p>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
