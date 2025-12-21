@@ -35,7 +35,7 @@ const api = {
 
     // Reservar
     reserve: async (equipId, userId, minutes) => {
-        // Nota: endpoints com @RequestParam usam URLSearchParams ou query string
+        // Usando parametros na url
         const response = await fetch(`${BASE_URL}/equipments/${equipId}/reserve?userId=${userId}&minutes=${minutes}`, {
             method: "POST"
         });

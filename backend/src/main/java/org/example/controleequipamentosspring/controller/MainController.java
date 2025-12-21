@@ -63,7 +63,7 @@ public class MainController {
                 .orElseGet(() -> {
                     User newUser = new User();
                     newUser.setNome(nome);
-                    newUser.setSenha(senha); // Adicionar criptografica depois (BCrypt)
+                    newUser.setSenha(senha); // Onde seria adicionada a criptografia (BCrypt)
                     return userRepo.save(newUser);
                 });
     }
